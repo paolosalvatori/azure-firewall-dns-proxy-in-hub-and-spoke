@@ -17,26 +17,16 @@ This sample show how to deploy a [hub-spoke topology](https://docs.microsoft.com
 
   - [Centralized vs Decentralized Private DNS Zones](https://github.com/paolosalvatori/private-endpoints-topologies)
   - [Enterprise-Scale - Reference Implementation](https://github.com/Azure/Enterprise-Scale)
-  - [What is Azure Private
-    Link?](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
-  - [What is Azure Private
-    Endpoint?](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
-  - [Azure Private Endpoint DNS
-    configuration](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns)
-  - [Name resolution for resources in Azure virtual
-    networks](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#name-resolution-that-uses-your-own-dns-server)
-  - [DNS in Microsoft Azure -- Part
-    1](https://journeyofthegeek.com/2019/11/14/dns-in-microsoft-azure-part-1/)
-  - [DNS in Microsoft Azure -- Part
-    2](https://journeyofthegeek.com/2019/11/21/dns-in-microsoft-azure-part-2/)
-  - [DNS in Microsoft Azure -- Part
-    3](https://journeyofthegeek.com/2019/11/24/dns-in-microsoft-azure-part-3/)
-  - [Azure Private Link and DNS -- Part
-    1](https://journeyofthegeek.com/2020/03/05/azure-private-link-and-dns-part-1/)
-  - [Azure Private Link and DNS -- Part
-    2](https://journeyofthegeek.com/2020/03/06/azure-private-link-and-dns-part-2/)
-  - [Private Endpoint DNS Integration
-    Scenarios](https://github.com/dmauser/PrivateLink/tree/master/DNS-Integration-Scenarios)
+  - [What is Azure Private Link?](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
+  - [What is Azure Private  Endpoint?](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
+  - [Azure Private Endpoint DNS configuration](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns)
+  - [Name resolution for resources in Azure virtual networks](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#name-resolution-that-uses-your-own-dns-server)
+  - [DNS in Microsoft Azure -- Part 1](https://journeyofthegeek.com/2019/11/14/dns-in-microsoft-azure-part-1/)
+  - [DNS in Microsoft Azure -- Part 2](https://journeyofthegeek.com/2019/11/21/dns-in-microsoft-azure-part-2/)
+  - [DNS in Microsoft Azure -- Part 3](https://journeyofthegeek.com/2019/11/24/dns-in-microsoft-azure-part-3/)
+  - [Azure Private Link and DNS -- Part 1](https://journeyofthegeek.com/2020/03/05/azure-private-link-and-dns-part-1/)
+  - [Azure Private Link and DNS -- Part 2](https://journeyofthegeek.com/2020/03/06/azure-private-link-and-dns-part-2/)
+  - [Private Endpoint DNS Integration Scenarios](https://github.com/dmauser/PrivateLink/tree/master/DNS-Integration-Scenarios)
 
 ## Architecture with a custom DNS forwarder
 
