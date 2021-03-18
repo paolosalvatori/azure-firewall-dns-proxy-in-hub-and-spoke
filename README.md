@@ -37,7 +37,7 @@ The following diagram illustrates the DNS resolution sequence from a virtual net
 This topology implements the following scenario:
 
 - Contoso Corporation implemented and deployed [Hub and Spoke network topology](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli).
-- Any outbound traffic is routed via the Azure Firewall in the two hub virtual network by using user-defined rule (UDRs) defined in a route table associated to the default subnet in the two spoke virtual networks.
+- Any outbound traffic is routed via the Azure Firewall in the two hub virtual network by using user-defined route (UDRs) defined in a route table associated to the default subnet in the two spoke virtual networks.
 
 ![Route Table](images/route-table.png)
 
@@ -59,7 +59,7 @@ This topology implements the following scenario:
 
 - DNS settings in the Azure Policy is configured to enable the DNS Proxy on the associated Azure Firewall that will listen on port 53 for DNS queries and will them to the the private IP adddress of the custom DNS forwarder. To ensure DNS traffic is directed to the Azure Firewalls associated with this policy, you must configure your virtual network DNS server settings and set the Azure Firewall’s private IP address as a custom DNS server.
 
-![Route Table](dns-proxy-with-custom-dns-forwarder.png)
+![Route Table](images/dns-proxy-with-custom-dns-forwarder.png)
 
 - Some of the subnets in the hub and spoke topology are configured to used a Network Security Group (NSG) to control the ingress and egress traffic to and from those suvnets. These NSGs are configured to send diagnostics logs and metrics to a Log Analytics workspace.
 - A Private DNS Zone called `contoso.corp` is used for the name resolution of the virtual machines in the hub and spoke virtual networks. A virtual network link with auto-registration enabled exists between this Private DNS Zone and all the virtual networks in the topology.
@@ -90,7 +90,7 @@ This topology implements the same scenario as the previous topology with two dif
 - No custom DNS forwarder is deployed in the hub virtual network.
 - The DNS settings of the Azure policy are configured to enable the DNS proxy on the associated Azure Firewall, but in this case the Azure Firewall will listent for DNS request on port 53 and directly send them to the default Azure DNS.
 
-![Route Table](dns-proxy-without-custom-dns-forwarder.png)
+![Route Table](images/dns-proxy-without-custom-dns-forwarder.png)
 
 This is the list of steps necessary for the name resolution of the FQDN of a blob/ADLS storage account to the private IP address of the corresponding private endpoint deployed in the hub virtual network:
 
