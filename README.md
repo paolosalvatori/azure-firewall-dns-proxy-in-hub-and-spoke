@@ -3,7 +3,7 @@ services: azure, azure-storage, azure-blob-storage, firewall-manager, azure-fire
 platforms: linux, bash
 ---
 
-# Use Azure Firewall as a DNS Proxy in a Hub and Spoke topology
+# Use Azure Firewall as a DNS Proxy in a Hub and Spoke topology along with Private Endpoints
 
 This sample show how to deploy a [hub-spoke topology](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli) in Azure. The hub virtual network acts as a central point of connectivity to many spoke virtual networks that are connected to hub virtual network via [virtual network peering](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview). The hub can also be used as the connectivity point to your on-premises networks using a [VPN gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways). The spoke virtual networks can be hosted in the same or a different Azure subscription with respect to the hub virtual network and they are used to isolate workloads from one another. The benefits of using a hub and spoke configuration include cost savings, overcoming subscription limits, and workload isolation. This topology shows how to:
 
